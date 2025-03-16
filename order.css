@@ -1,0 +1,185 @@
+body {
+		background-image: url('back1.jpg');
+		z-index: 0;
+	}
+
+	.userpass-top {
+		width: 100%;
+		height: 70px; 
+		background-color: rgba(97, 101, 101, 0.29);
+		text-align: right;
+		position: relative;
+	}
+
+	.top-label {
+		color: white;
+		font-size: 20px;
+		
+
+	}
+
+	.userpass-top input {
+		width: 250px;
+		height: 20px;
+	}
+	#btn-sub {
+		height:20px;
+		width: 60px;
+		margin: 15px 15px;
+		cursor: pointer;
+		border-radius: 5px 5px;
+	}
+
+	#btn-sub:hover {
+		background-color: #EA9F9F;
+
+	}
+
+	#logo {
+		color: white;
+		position: absolute;
+		top: -1px;
+		padding: 1px 10px;
+		font-family: algerian;
+
+
+	}
+
+	#size-head{
+		color: white;
+		background-color: rgba(182, 117, 73, 0.59);
+		height: 50px;
+		width: 100%;
+	}
+
+	#size-head h1 {
+		padding: 5px 5px;
+	}
+
+	.select-size {
+		background-color:rgba(97, 101, 101, 0.29); 
+		width: 100%;
+		height: 100px;
+	}
+
+	.p-size {
+		color: white;
+		width: 30%;
+		font-size: 30px;
+		padding: 20px 20px;
+		
+	}
+
+	.btn-radio{
+		width: 2.5%;
+		float: left;
+
+		
+	}
+
+	.select-crust {
+		background-color:rgba(97, 101, 101, 0.29); 
+		width: 100%;
+		height: 100px;
+	}
+
+	.p-crust {
+		color: white;
+		width: 30%;
+		font-size: 30px;
+		padding: 20px 20px;
+		
+	}
+	
+	.p-sauce {
+		color: white;
+		width: 30%;
+		font-size: 30px;
+		padding: 20px 20px;
+		
+	}
+
+	.select-sauce {
+		background-color:rgba(97, 101, 101, 0.29); 
+		width: 100%;
+		height: 100px;
+	}
+
+	.p-topping {
+		color: white;
+		width: 30%;
+		font-size: 30px;
+		padding: 20px 20px;
+		
+	}
+
+	.select-topping {
+		background-color:rgba(97, 101, 101, 0.29); 
+		width: 100%;
+		height: 100px;
+	}
+	
+	.btn-spec input {
+		color: white;
+		background-color: #CB6B38;
+		padding: 25px 25px;
+		margin: 10px 10px;
+		text-shadow: 2px black;
+		border-radius: 15px 15px;
+		font-size: 20px;
+
+
+	}	
+
+	.btn-spec{
+		text-align: center;
+	}
+
+    #good  {
+        color: aliceblue;
+        font-size: 30px;
+        font-style: italic;
+
+    }
+    #good2  {
+        color: aliceblue;
+        font-size: 30px;
+        font-style: italic;
+        text-shadow: 30px black;
+
+    }
+
+	#great  {
+        color: aliceblue;
+        font-size: 30px;
+        font-style: italic;
+
+    }
+    #great2  {
+        color: aliceblue;
+        font-size: 30px;
+        font-style: italic;
+        text-shadow: 30px black;
+
+    }
+
+	#reset {
+		color: white;
+		background-color: #eb1224;
+		padding: 25px 25px;
+		margin: 10px 10px;
+		text-shadow: 2px black;
+		border-radius: 15px 15px;
+		font-size: 20px;
+	}
+
+	#cancel {
+		color: white;
+		background-color: #46B92A;
+		padding: 25px 25px;
+		margin: 10px 10px;
+		text-shadow: 2px black;
+		border-radius: 15px 15px;
+		font-size: 20px;
+	}
+		

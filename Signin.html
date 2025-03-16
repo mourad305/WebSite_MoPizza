@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO PIZZA - SIGN IN</title>
+    <link rel="stylesheet" href="signin.css">
+
+</head>
+    
+
+
+
+<script>
+    function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.Username.value == "Richard" && form.Password.value == "Osborne") {
+                    window.open('order.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Please enter the correct password and username")/*displays error message*/
+                }
+            }
+</script>
+<body>
+    <h1>MoMO Pizza - Please Sign In </h1>
+    <h3>Please enter the correct password and username to allow you to go to the order page</h3>
+    <form class="userpass-top">
+		<label class="up-lab">Username</label>
+		<input class="tx-in" type="text" name="Username" placeholder="Please enter your username" required="" >
+        <br>
+		<label class="up-lab">Password </label>
+		<input class="tx-in" type="Password" name="Password" placeholder="Please enter your password" required="">
+        <br><br>
+		<input id="btn-sub" type="submit" name="submit" value="Sign in" onclick="check(this.form)">
+		<button onclick="document.location='Welcome.html'" id="btn-sub" >Home</button>
+	</form>
+ 
+
+    
+</body>
+</html>

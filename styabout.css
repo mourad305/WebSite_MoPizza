@@ -1,0 +1,109 @@
+body {
+    background-image: url('back1.jpg');
+    width: 100%;	
+    background-attachment: fixed;
+    position: relative;
+
+
+    
+
+
+}
+
+#top {
+    color: white;
+    height: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-family: algerian;
+
+}
+
+#rightside{
+    float: left;
+    width: 70%;
+    padding: 10px;
+    color: white;
+}
+
+#sidebar{
+    float: right;
+    width: 15%;
+    padding-right: 60px;
+
+}
+
+#button{
+    border-radius: 25px 25px 25px 25px;
+    height: 40px;
+    font-size: 50;
+    padding-bottom: 30%;
+
+
+
+}
+#button h1 {
+    color: #D6F359;
+    text-shadow: 2px 2px black;	
+}
+
+.fix-me{
+position: fixed;
+bottom: 300px;
+left: 1200px;
+color: #02D6AC;
+text-shadow: 1px 1px black;
+font-size: 30px;
+}
+
+#type{
+    color: white;
+    text-decoration-color: #1EE700;
+}
+
+#downside{
+    float: left;
+    width: 70%;
+    height: 120px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(97, 101, 101, 0.29);
+
+    
+}
+
+#midside{
+    float: left;
+    width: 70%;
+    height: 100px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(97, 101, 101, 0.29);
+
+    
+}
+#why{
+        float: left;
+        width: 70%;
+        height: 100px;
+        padding: 10px;
+        color: white;
+        background-color: rgba(97, 101, 101, 0.29);
+
+        
+
+}
+
+#btn-home {
+    background: #A43333;
+    color: white;
+    width: 100px;
+    height: 50px;
+    left: 1200px;
+    top: 100px;
+    position: fixed;
+    text-shadow: 1px 1px black;
+    border-radius: 10px 10px;
+
+
+}

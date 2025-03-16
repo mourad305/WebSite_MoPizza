@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order</title>
+    <link rel="stylesheet" href="order.css">
+
+</head>
+
+	
+	
+		
+	
+
+<script type="text/javascript">
+
+	
+	function Set_radio() {
+        document.getElementById("r3").checked = true;
+        document.getElementById("r4").checked = true;
+        document.getElementById("r9").checked = true;
+		document.getElementById("r12").checked = true;
+		document.getElementById("r10").checked = false;
+		document.getElementById("r11").checked = false;
+
+        var x = document.getElementById("gooddeal").value;
+        document.getElementById("demo").innerHTML = x ;
+        var x = document.getElementById("gooddeal2").value;
+        document.getElementById("demo2").innerHTML = x ;
+		document.getElementById("great").style.visibility = "hidden";
+		document.getElementById("great2").style.visibility = "hidden";
+		document.getElementById("good").style.visibility = "visible";
+		document.getElementById("good2").style.visibility = "visible";
+    }
+
+    function Set_radio1() {
+        document.getElementById("r2").checked = true;
+        document.getElementById("r6").checked = true;
+        document.getElementById("r7").checked = true;
+		document.getElementById("r10").checked = true;
+		document.getElementById("r12").checked = false;
+		document.getElementById("r11").checked = false;
+
+		var y = document.getElementById("greatdeal").value;
+        document.getElementById("show1").innerHTML = y ;
+        var y = document.getElementById("greatdeal2").value;
+        document.getElementById("show2").innerHTML = y ;
+		document.getElementById("good").style.visibility = "hidden";
+		document.getElementById("good2").style.visibility = "hidden";
+		document.getElementById("great").style.visibility = "visible";
+		document.getElementById("great2").style.visibility = "visible";
+
+		
+            
+    }
+
+	function setRadio(){
+        function sumRadio() {
+            var total = 0, i = 1, oForm = this.form;
+            while (radgrp = oForm.elements['Set' + (i++)]){
+                j = radgrp.length;
+                do 
+                    if (radgrp[--j].checked)
+                    {
+                        total += Number(radgrp[j].value);
+                        break;
+                    }
+                while (j);
+            }
+            oForm.elements.total.value = total.toFixed(2);
+        }
+    var i = 0, input, inputs = document.getElementById('f1').getElementsByTagName('input');
+    while (input = inputs.item(i++))
+        if (input.name.match(/^Set\d+$/))
+            input.onclick = sumRadio ;
+    }
+
+    onload = setRadio;
+
+
+
+   
+    
+
+ 	
+</script>
+<body>
+	<form class="userpass-top">
+		<label class="top-label">Username</label>
+		<input type="text" name="Username" placeholder="Please enter your username" pattern="[M][A-Za-z0-9]{4,15}" title="Must contain 4 to 15 characters with first letter is 'M' and no space" required="" >
+		<label class="top-label">Password</label>
+		<input type="Password" name="Password" placeholder="Please enter your password" pattern="[A-Za-z0-9]{4,15}[M]" title="Must contain 4 to 15 characters with last letter is 'M' and no space" required="">
+		<input id="btn-sub" type="submit" name="submit" value="Sign Up">
+		<button onclick="document.location='Welcome.html'" id="btn-sub" >Home</button>
+	</form>
+	<h1 id="logo">Create Your Order</h2>
+	<div id="size-head">
+		<h1>1. Please select your Size <img src="size.gif" alt="Pizza Size" width="42" height="42" style="vertical-align:bottom"></h1>
+	</div>
+	<form id="f1">
+		<div class="select-size">
+			<label class="p-size">Small (8 Slices)  $6.77</label>
+			<input class="btn-radio" id="r1" type="radio" name="Set1" value="6.77">
+			
+			<br>
+			<label class="p-size">medium (10 Slices) $8.99</label>
+			<input class="btn-radio" id="r2" type="radio" name="Set1" value="8.99">
+			
+
+			<br>
+			<label class="p-size">Large (12 Slices) $10	.99</label>
+			<input class="btn-radio" id="r3" type="radio" name="Set1" value="10.99">	
+
+		</div>
+		<br>
+		<div id="size-head">
+			<h1>2. Please select your Crust <img src="source.gif" alt="Smiley face" width="42" height="42" style="vertical-align:bottom"></h1>
+		</div>
+
+		<div class="select-crust">
+			<label class="p-crust" for="r4" >Thick Crust  <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom"> 2.00</label>
+			<input class="btn-radio" id="r4" type="radio" name="Set2" value="2">
+			<br>
+			<label class="p-crust" for="r5" >Thin Crust  <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom"> 1.00</label>
+			<input class="btn-radio" id="r5" type="radio" name="Set2" value="1.00">
+			<br>
+			<label class="p-crust" for="r6">Cracker Crust <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom">0.75</label>
+			<input class="btn-radio" id="r6" type="radio" name="Set2" value="0.75">	
+
+		</div>
+		<br>
+
+		<div id="size-head">
+			<h1>3. Please select your favorite Sauce </h1>
+		</div>
+
+		<div class="select-sauce">
+			<label class="p-sauce" for="r7">Red Secret Sauce  <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom"> 0.75</label>
+			<input class="btn-radio" id="r7" type="radio" name="Set3" value="0.75">
+			<br>
+			<label class="p-sauce" for="r8">White Secret Sauce <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom"> 1.00</label>
+			<input class="btn-radio" id="r8" type="radio" name="Set3" value="1">
+			<br>
+			<label class="p-sauce" for="r9">Blue Chesse Secret Sauce <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom">1.25</label>
+			<input class="btn-radio" id="r9" type="radio" name="Set3" value="1.25">	
+		</div>
+		<br>
+
+		<div id="size-head">
+			<h1>4. Please select one option for your favorite Topping </h1> 
+		</div>
+
+		<div class="select-topping">
+			<label class="p-topping">Pepperoni+ Green pepper + black olives <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom">3.00</label>
+			<input class="btn-radio" id="r10" type="checkbox" name="Set4" value="3">
+			<br>
+			<label class="p-topping">Chicken + yellow and orange pepper + green olives  <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom"> 3.75</label>
+			<input class="btn-radio" id="r11" type="checkbox" name="Set4" value="3.75">
+			<br>
+			<label class="p-topping">Italian Sausage + Tomato + black olives <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom">4.50</label>
+			<input class="btn-radio" id="r12" type="checkbox" name="Set4" value="4.50">	
+		</div>
+
+
+		<div id="size-head">
+			<h1>5. Please select your delivery method </h1>
+		</div>
+
+		<div class="select-sauce">
+			<label class="p-sauce" for="r13">Delivery within 1 hr <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom">3.00</label>
+			<input class="btn-radio" id="r13" type="radio" name="Set5" value="3">
+			<br>
+			<label class="p-sauce" for="r14">Delivery within 30 min <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom"> 4.50</label>
+			<input class="btn-radio" id="r14" type="radio" name="Set5" value="4.5">
+			<br>
+			<label class="p-sauce" for="r15">Drive-Thru <img src="dollar.gif" alt="Smiley face" width="30" height="30" style="vertical-align:bottom">FREE</label>
+			<input class="btn-radio" id="r15" type="radio" name="Set5" value="0">	
+		</div>
+		<br>
+
+
+		<div id="good">
+			<input type="hidden" id="gooddeal" value="You picked GOOD OFFER SO YOU GOT 10% OFF ..CONGRATS!!">
+			<p id="demo"></p>
+		</div>
+
+		<div id="good2">
+			<input type="hidden" id="gooddeal2" value="YOUR TOTAL IS $14.85">
+			<p id="demo2"></p>
+		</div>
+
+		<div id="great">
+			<input type="hidden" id="greatdeal" value="You picked GREAT OFFER SO YOU GOT 15% OFF ..CONGRATS!!">
+			<p id="show1"></p>
+		</div>	
+
+		<div id="great2">
+			<input type="hidden" id="greatdeal2" value="YOUR TOTAL IS $9.75">
+			<p id="show2"></p>
+		</div>
+
+		
+		
+		
+
+
+
+		<div class="btn-spec">
+			<img src="deal.gif" alt="deal" width="100" height="100" style="vertical-align:bottom">
+			<input type="button" onclick="Set_radio();" value="Good Offer">
+			<input type="button" onclick="Set_radio1();" value="Great Offer">
+			<button type="reload" onclick="cancel()" id="cancel">CANCEL DEAL</button>
+
+			<input type="reset" onclick="reset();" value="Reset" id="reset">
+ 
+			<input id="total" type="text" name="total" value="0.00" readonly />
+
+		</div>
+	</form>
+	
+
+
+
+</body>
+</html>
